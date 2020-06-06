@@ -1,0 +1,119 @@
+﻿@using OnlineLearning.Models
+@model MTOrderMaster
+
+<script type="text/javascript" language=javascript>
+   // $.validator.unobtrusive.parse(document);
+
+
+    //$(document).ready(function() {
+    //    $.validator.unobtrusive.parse(document);
+    //});
+
+    function validationSave()
+    {
+        debugger;
+        $("#form").validate();
+        //if ($('#form').valid()) {
+            var TempModel = {
+                StudentName: $("#StudentName").val(),
+                Class: $("#Class").val(),
+                School: $("#School").val(),
+                FatherName: $("#FatherName").val(),
+                EmailID: $("#EmailID").val(),
+                FatherPhoneNo: $("#FatherPhoneNo").val(),
+                Address: $("#Address").val(),
+            }
+
+            $.post("/Home/Index", { "smodel": TempModel }, function (data) {
+
+                if (data.Message != "") {
+                    debugger
+
+                    if (data.Message == "Login Again") {
+                        location.href = '/';
+                    }
+                    else {
+                        debugger;
+                        fhidealert();
+
+
+                        if (Message == 'Saved Successfully') {
+                            debugger;
+                            // alert(data.Message);
+                            // $("input:text").val("");
+                            // $('.fas.fa-times').trigger('click');
+                            location.href = '/Home/OnlinePayment';
+                            return false;
+                        }
+                    }
+                }
+            }).done(function () { alert('Request done!'); });
+       // }
+       return false;
+    }
+
+    function fClaer()
+    {
+
+    }
+</script>
+@using (Html.BeginForm())   //"Index", "Home", FormMethod.Post//"Index", "Home", FormMethod.Post ,new { @id = "form", @class = "form-horizontal", role = "form" }
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <i class="fas fa-times"></i>
+        <h2>Please Fill The Details</h2>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.StudentName, htmlAttributes: new { @class = "control-label col-md-2" })*@
+
+                @Html.EditorFor(model => model.StudentName, new { htmlAttributes = new { @id = "StudentName", @class = "form-control red", placeholder = "Enter Name",@maxlength="60" } })
+                @Html.ValidationMessageFor(model => model.StudentName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+                @Html.EditorFor(model => model.Class, new { htmlAttributes = new { @id = "Class", @class = "form-control", placeholder = "Enter Class", @maxlength = "50" } })
+                @Html.ValidationMessageFor(model => model.Class, "", new { @class = "text-danger" })
+            </div>
+
+        <div class="form-group">
+
+                @Html.EditorFor(model => model.School, new { htmlAttributes = new { @id = "School", @class = "form-control", placeholder = "Enter School ", @maxlength = "150" } })
+                @Html.ValidationMessageFor(model => model.School, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+                @Html.EditorFor(model => model.FatherName, new { htmlAttributes = new { @id = "FatherName", @class = "form-control", placeholder = "Enter Father Name", @maxlength = "60" } })
+                @Html.ValidationMessageFor(model => model.FatherName, "", new { @class = "text-danger" })
+            </div>
+
+        <div class="form-group">
+                @Html.EditorFor(model => model.EmailID, new { htmlAttributes = new { @id = "EmailID", @class = "form-control", placeholder = "Enter Email ID", @maxlength = "60" } })
+                @Html.ValidationMessageFor(model => model.EmailID, "", new { @class = "text-danger" })
+            </div>
+
+        <div class="form-group">
+
+                @Html.EditorFor(model => model.FatherPhoneNo, new { htmlAttributes = new { @id = "FatherPhoneNo", @class = "form-control", placeholder = "Enter Father Phone No.", @maxlength = "50" } })
+                @Html.ValidationMessageFor(model => model.FatherPhoneNo, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+                @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @id = "Address", @class = "form-control", placeholder = "Enter Address", @maxlength = "150" } })
+                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="form-group">
+                <input type="submit" onclick="return validationSave();"  value="Order" class="btn btn-default w-25" />@*onclick="return validationSave();"*@
+            </div>
+    </div>
+    @section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+}
+

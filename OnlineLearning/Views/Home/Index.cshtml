@@ -1,0 +1,345 @@
+﻿@using OnlineLearning.Models;
+@model MTOrderMaster
+@{
+    Layout = " ~/Views/Shared/_Layout.cshtml";
+    //Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning from Home | 3D Interactive Content - Entab</title>
+    <meta name="description" content="Now turn your home into 3D interactive environment,Purchase the home learning App at low price during covid-19 pandemic.For CBSE/ICSE. 1 - 10 class Maths and science." />
+    <meta name="keywords" content="3D Interactive Content, 3D monoscopic content, videos, 3D animations, 3D interactive models, 3D simulations, 3D virtual labs, home learning, covid-19, corona pandemic, corona virus, learning from home, home learning app, students learning app, lms, ar, vr, 3d stereo./">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="Stylesheet" href="css/fontawesome-all.css" type="text/css">
+    <link rel="Stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                    <div class="logo">
+                        <img src="img/logo.png">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+                    <div class="schedule-link">
+                        <ul>
+                            <li><a href="#">Request For Demo</a></li>
+                            <li><a href="tel:9711831556"><i class="fas fa-mobile-alt"></i> 9711831556</a></li>
+                            <li><a href="mailto:info@entab.in"><i class="far fa-envelope"></i> Info@entab.in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bfr-div">
+
+        <div class="leftf-blk ful-wid">
+            <div class="top-list">
+                <div class="tabs">
+
+                    <div id="tabs-content">
+                        <div id="tab1" class="tab-content">
+                            <video autoplay loop playsinline width="400" controls>
+                                <source class="video1" src="img/math.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="tab2" class="tab-content">
+                            <video autoplay loop playsinline width="400" controls>
+                                <source class="video2" src="img/Physics.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="tab3" class="tab-content">
+                            <video width="400" controls playsinline autoplay loop>
+                                <source class="video3" src="img/Chemistry.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="tab4" class="tab-content">
+                            <video width="400" controls autoplay loop>
+                                <source class="video4" src="img/Biology.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="tab5" class="tab-content">
+                            <video width="400" controls autoplay loop>
+                                <source class="video5" src="img/Animation.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <ul id="tabs-nav">
+                        <li class="lst1">
+                            <a href="#tab1">
+                                <img src="img/math.png">
+                                <p>Maths</p>
+                            </a>
+                        </li>
+                        <li class="lst2">
+                            <a href="#tab2">
+                                <img src="img/phy.png">
+                                <p>Physics</p>
+                            </a>
+                        </li>
+                        <li class="lst3">
+                            <a href="#tab3">
+                                <img src="img/chem.png">
+                                <p>Chemistry</p>
+                            </a>
+                        </li>
+                        <li class="lst4">
+                            <a href="#tab4">
+                                <img src="img/bio.png">
+                                <p>Biology</p>
+                            </a>
+                        </li>
+                        <li class="lst5">
+                            <a href="#tab5">
+                                <img src="img/anim.png">
+                                <p>Animation</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>Entab presents an innovative way to keep the spirit of learning unscathed amidst the COVID-19 pandemic.<br>	<span>Stay Home. Stay Safe. Keep Learning.</span></p>
+        </div>
+        <div class="col-line6">
+            <section>
+
+                <div class="main-cont">
+                    <h2>Learn from Home with <span>3D Interactive Content</span></h2>
+                    <p>For ICSE/CBSE, Class 1 to I0 Math & Science</p>
+                </div>
+            </section>
+            <div class="container-fluid nopad">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>	Turn your home into an interactive learning environment with highly stimulating 3D Content. With a large repository of more than 5100 3D learning resources, let your ward study in a way like never before!</p><p>	This 3D Learning package helps students to learn at their own pace and do self-assessment with the help of interactive quizzes and exercises.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="left-l">
+                            <p>Impressive Benefits of Entab’s 3D Learning Package:</p>
+                        </div>
+                        <div class="icons">
+                            <img src="img/video.png">
+                            <h3>Stimulating Videos</h3>
+                        </div>
+                        <div class="icons">
+                            <img src="img/3D Animation.png">
+                            <h3>3D Animations</h3>
+                        </div>
+                        <div class="icons">
+                            <img src="img/3D Interactive.png">
+                            <h3>3D Interactive Models</h3>
+                        </div>
+                        <div class="icons">
+                            <img src="img/3d Simulations.png">
+                            <h3>3D Simulations</h3>
+                        </div>
+                        <div class="icons">
+                            <img src="img/3D Virtual Labs.png">
+                            <h3>3D Virtual Lab</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container rel">
+                <div class="cont-lg1">
+                    <div class="row">
+
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="list-number">
+                                <div class="left-l">
+                                    <p>Impressive Benefits of Entab’s 3D Learning Package:</p>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-share"></i> Personalized Learning</li>
+                                    <li><i class="fas fa-share"></i> Retention Long Term Memory Retention </li>
+                                    <li><i class="fas fa-share"></i> Active Learning with 3D Simulations</li>
+                                    <li><i class="fas fa-share"></i> Faster Learning Experience with 3D Videos</li>
+                                    <li><i class="fas fa-share"></i> Elevated Engagement with 3D Interactive Models</li>
+                                    <li><i class="fas fa-share"></i> 3000+ On-Page Interactive Exercises & Quizzes</li>
+                                    <li><i class="fas fa-share"></i> Text, Glossary, Weblinks & Key-terms</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div class="con-lj">
+                                <div class="amt">
+                                    <i>Buy now at only<br><span>Rs.599/- per month</span></i>
+                                </div>
+                                <div class="purchase">
+                                    <a href="#" class="pur-c">Purchase Now</a>
+                                </div>
+
+                                <img src="img/Campus i-Learn Logo.png" class="ilearn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leftf-blk device">
+                <div class="top-list">
+                    <div class="tabs">
+
+                        <div id="tabs-content">
+                            <div id="tab6" class="tab-content">
+                                <video autoplay loop playsinline width="400" controls>
+                                    <source class="video1" src="img/math.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div id="tab7" class="tab-content">
+                                <video autoplay loop playsinline width="400" controls>
+                                    <source class="video2" src="img/Physics.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div id="tab8" class="tab-content">
+                                <video width="400" controls playsinline autoplay loop>
+                                    <source class="video3" src="img/Chemistry.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div id="tab9" class="tab-content">
+                                <video width="400" controls autoplay loop>
+                                    <source class="video4" src="img/Biology.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div id="tab10" class="tab-content">
+                                <video width="400" controls autoplay loop>
+                                    <source class="video5" src="img/Animation.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <ul id="tabs-nav">
+                            <li class="lst1">
+                                <a href="#tab6">
+                                    <img src="img/math.png">
+                                    <p>Maths</p>
+                                </a>
+                            </li>
+                            <li class="lst2">
+                                <a href="#tab7">
+                                    <img src="img/phy.png">
+                                    <p>Physics</p>
+                                </a>
+                            </li>
+                            <li class="lst3">
+                                <a href="#tab8">
+                                    <img src="img/chem.png">
+                                    <p>Chemistry</p>
+                                </a>
+                            </li>
+                            <li class="lst4">
+                                <a href="#tab9">
+                                    <img src="img/bio.png">
+                                    <p>Biology</p>
+                                </a>
+                            </li>
+                            <li class="lst5">
+                                <a href="#tab10">
+                                    <img src="img/anim.png">
+                                    <p>Animation</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Entab presents an innovative way to keep the spirit of learning unscathed amidst the COVID-19 pandemic.<br>	<span>Stay Home. Stay Safe. Keep Learning.</span></p>
+            </div>
+
+            <footer>
+                <p>© Copyright 2000 - 2020, All rights reserved with Entab Infotech Pvt. Ltd. </p>
+            </footer>
+        </div>
+    </div>
+    <div class="pop-up">
+        @Html.Partial("_Order")
+        @*<form>
+            <i class="fas fa-times"></i>
+            <h2>Please Fill The Details</h2>
+            <input type="text"id="txtName" placeholder="Enter Your Name">
+            <input type="text" id="txtName" placeholder="Enter Your Class">
+            <input type="text" id="txtName" placeholder="Enter Your School Name">
+            <input type="text" id="txtName" placeholder="Enter Your Father Name">
+            <input type="text" id="txtName" placeholder="Enter Your Email">
+            <input type="text" id="txtName" placeholder="Enter Father's Phone Number">
+            <textarea id="txtName"  placeholder="Enter Address"></textarea>
+            <button class="show-msg">Order Now</button>
+        </form>*@
+        <div class="msg-bk" id="Divmsg">
+            <i class="fas fa-times close-btn"></i>
+            <center><h1>Thank You</h1></center>
+            <p>
+                <span>Thank you</span> for sharing your details. You will shortly receive a link on your registered mail that will redirect you to the Entab 3D Interactive Content Package.
+            </p><p>
+                Stay Home. Stay Safe. Keep Learning.
+            </p>
+        </div>
+
+    </div>
+    <script type="text/javascript" href="js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.tab-content video').trigger('pause');
+            $('.tab-content:first-child video').trigger('play');
+            $(".pur-c").click(function(){
+
+                $(".pop-up").css("display","block");
+            });
+            $("form i").click(function(){
+                $(".pop-up").css("display","none");
+            });
+            $(".msg-bk").hide();
+            $(".show-msg").click(function(){
+                $(".msg-bk").show();
+                $("form").hide();
+            });
+            $(".close-btn").click(function(){
+                $(".pop-up").hide();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $('#tabs-nav li:first-child').addClass('active-bl');
+        $('.tab-content').hide();
+        $('.tab-content:first').show();
+        $('#tab6').show();
+
+
+        $('#tabs-nav li').click(function(){
+            $('#tabs-nav li').removeClass('active-bl');
+            $(this).addClass('active-bl');
+            $('.tab-content').hide();
+            var activeTab = $(this).find('a').attr('href');
+            $(activeTab).fadeIn();
+            return false;
+        });
+
+        //window.addEventListener('load', async () => {
+        //    let video = document.querySelector('video[muted][autoplay]');
+        //try {
+        //    await video.play();
+        //} catch (err) {
+        //    video.controls = true;
+        //}
+        //});
+
+        $(".lst2, .lst3,.lst4,.lst5, lst1").click(function(){
+            $('video').trigger('pause');
+        });
+    </script>
+</body>
+</html>

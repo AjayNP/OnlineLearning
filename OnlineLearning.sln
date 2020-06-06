@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineLearning", "OnlineLearning\OnlineLearning.csproj", "{EE16D84F-A0F4-41B0-9C59-C8DC7B48607B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE16D84F-A0F4-41B0-9C59-C8DC7B48607B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE16D84F-A0F4-41B0-9C59-C8DC7B48607B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE16D84F-A0F4-41B0-9C59-C8DC7B48607B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE16D84F-A0F4-41B0-9C59-C8DC7B48607B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
